@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:ui' show hashValues;
+import 'dart:ui' ;
 
 import 'package:flutter/foundation.dart' show setEquals;
 import 'types.dart';
@@ -94,7 +94,7 @@ class PolygonUpdates {
 
   @override
   int get hashCode =>
-      hashValues(polygonsToAdd, polygonIdsToRemove, polygonsToChange);
+      Object.hash(polygonsToAdd, polygonIdsToRemove, polygonsToChange);
 
   @override
   String toString() {
